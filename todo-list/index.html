@@ -9,16 +9,19 @@
   </head>
   <body>
     <div class="inner">
+      <h2 class="clock">00:00:00</h2>
+      <h1 class="greeting hidden"></h1>
       <form class="login-form hidden">
         <input required maxlength="15" type="text" placeholder="what is your name?" class="login-form__text" />
         <input type="submit" value="login" class="login-form__btn" />
       </form>
+      <h2 class="todo-list-tit">해야할 목록</h2>
       <form action="" class="todo-form">
-        <input type="text" placeholder="your text" required />
+        <input type="text" placeholder="해야할 일을 적으세요." required />
       </form>
+
       <ul class="todo-list"></ul>
-      <h2 class="clock">00:00:00</h2>
-      <h1 class="greeting hidden"></h1>
+
       <div class="quote">
         <span></span>
         <span></span>
