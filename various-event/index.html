@@ -1,0 +1,8 @@
+<ul style="margin-bottom: 10rem; display: flex; align-items: center; gap: 1rem">
+  <li v-for="item in itemList" :key="item.id" style="display: flex; gap: 1rem">
+    <button class="listButton">{{ item.title }} <span @click="removeCompareItem(item)">x</span></button>
+  </li>
+  <li style="margin: 0 auto">
+    <button class="compareButton" :disabled="!itemList.length > 0" style="text-align: center">검진항목 비교하기</button>
+  </li>
+</ul>
